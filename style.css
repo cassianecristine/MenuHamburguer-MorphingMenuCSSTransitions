@@ -8,11 +8,49 @@ body{
     justify-content: center;
     align-items: center;
 }
-.card{
+.card {
     height: 400px;
     width: 500px;
     background-image: url('./Cassiane\ Developer.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(0.5);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.card-wrapper .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.card-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: block;
+    border: 1px solid white;
+    border-radius: 10%;
+    opacity: ;
+    transition: 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
